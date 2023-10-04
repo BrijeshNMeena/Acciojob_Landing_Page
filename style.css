@@ -1,0 +1,299 @@
+
+nav{
+    position: sticky;
+    top: 0px;
+    left: 0px;
+    background-color: white;
+    z-index: 2;
+}
+
+.accio-logo{
+    color: #012555;
+    font-size: 21.714px;
+    font-weight: 600;
+    line-height: 38px;
+    margin-top: 20px;
+    margin-left: 5px;
+}
+
+.vertical-line{
+
+    border-left: 1px solid lightgray;
+    height: 30px;
+
+}
+
+.list{
+    list-style-type: none;
+}
+
+.list>li{
+    padding-inline: 10px;
+    color: #4F4F4F;
+}
+.my-login-btn{
+    font-style: italic;
+    border-width: 2px !important;
+}
+.nav-bottom{
+    font-style: italic;
+    color: white;
+    text-align: center;
+}
+
+.message{
+    font-style: italic;
+    color: #2B2F34;
+    padding-left: 0px;
+}
+.message-focus{
+    font-weight: 700;
+    -webkit-text-stroke-width: 1.8px;
+  -webkit-text-stroke-color: black;
+}
+
+.message-row2{
+    color: #595959;
+    font-size: 18px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.message-row3{
+   height: fit-content;
+   box-shadow: 0px 0px 10px lightgrey;
+   border-radius: 10px;
+   box-sizing: border-box;
+   column-gap: 1px; 
+   position: relative;
+   background-color: white;
+}
+
+.highlights{
+    font-style: italic;
+    line-height: 25px;
+}
+
+.highlights>span{
+    color: #4F4F4F;
+    font-size: 14px;
+    font-style: normal;
+}
+ 
+.my-icons{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+
+}
+
+.my-icon-color-1{
+    background-color: hwb(331 81% 3%);
+}
+
+.my-icon-color-3{
+    background-color: rgb(212, 248, 210);
+}
+
+.arrow-box{
+    position: absolute;
+    top: -50px;
+    right: -60px;
+    z-index: -1;
+}
+
+.signature{
+    height: 50px;;
+    width: 350px;
+    border-radius: 25px;
+    box-shadow: 0px 0px 30px #e6e6e6e1;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.hero{
+    display: flex;
+}
+.main-section{
+    flex: 3;
+}
+
+.my-form{
+    flex: 2;
+    height: 80vh;
+    box-sizing: border-box;
+    border-radius: 10px;
+    position: relative;
+    background-color: white;
+}
+.my-form::after{
+    content: "";
+    inset: -.625em;
+    background: linear-gradient(to bottom right,
+        rgb(0, 255, 81), rgb(255, 213, 0));
+    filter: blur(2.5em);
+    z-index: -1;
+    position: absolute;
+}
+
+
+.my-form>h1{
+    font-style: italic;
+}
+.my-form>p{
+    color: #818D9D;
+    width: 70%;
+}
+.my-apply-btn{
+    font-style: italic;
+    width: 85%;
+    background-image: linear-gradient(to right, blue, purple);
+}
+
+.terms{
+    white-space: pre;
+}
+.name{
+    color: #8393A9;
+    background-color: #FAFAFA;
+    padding-left: 10px;
+    border-radius: 10px;;
+}
+.name>input{
+    border: none;
+    background-color: transparent;
+    margin-left: 10px;
+}
+
+.speciality{
+    color: blue;
+    background-color: rgb(223, 241, 241);
+    padding: 2px;
+    border-radius: 5px;
+    margin: 2px;
+    /* padding-inline: 5px; */
+}
+
+.course-row-1>p{
+    color: #565656;
+    font-size: 15px;
+    font-weight: 500;
+}
+.course{
+    border: 1px solid lightgray;
+    background-color: white;
+    border-radius: 10px;
+    padding-top: 10px;
+    padding-bottom: 5px;
+    padding-inline: 20px;
+    position: relative;
+
+}
+table{
+    text-align: start;
+    margin-bottom: 30px;
+}
+.table-row{
+    border-bottom: 1px solid rgba(0, 0, 0, 0.20);
+}
+
+.courses-offered{
+    background-color: #ECF8FF;
+}
+td{
+    padding: 13px;
+    padding-right: 40px;
+    background-color: white;
+}
+
+.course:hover{
+    border: 1px solid blue;
+}
+
+.popup{
+    position: absolute;
+    top: -12px;
+    left: 21%;
+    border-radius: 7px;
+}
+
+.alumni>p{
+    background: linear-gradient(
+            to right, blue, purple);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+
+.grid-container{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    /* background-color: lightgreen; */
+    gap: 50px;
+}
+.my-font-color{
+    color: #676767;
+}
+
+.my-card{
+    max-width: 32%;
+    border-radius: 8px !important;
+    background-color: white;
+}
+.testimonial{
+    display: flex;
+    gap: 20px 20px;
+    flex-wrap: wrap; 
+} 
+
+@media screen and (max-width:480px){
+    .main-section{
+        flex-direction: column !important;
+        align-items: center;
+        margin: auto;
+        width: 80vw;
+    }
+
+    nav, .my-courses, .logos, .name, .nav-1, .list, .hero, .message-row3{
+        display: flex;
+        flex-direction: column !important;
+        align-items: center;
+        margin-top: 20px;
+    } 
+
+    .arrow-box{
+        display: none;
+    }
+
+    .vertical-line{
+        display: none;
+    }
+
+    nav{
+        padding-top: 20px;
+        padding-bottom: 20px;
+        position: static;
+    }
+
+    .grid-container{
+        grid-template-columns: repeat(2, 1fr);
+        /* gap: 50px; */
+    }
+
+    .my-card{
+        max-width: 100%;
+    }
+    .testimonial{
+        display: flex;
+        flex-wrap: wrap; 
+    } 
+    .course-row-3{
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .btn{
+        margin-top: 10px !important;
+        margin-bottom: 20px !important;
+    }
+
+}
